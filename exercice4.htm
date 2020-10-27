@@ -13,12 +13,57 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <a class="nav-link active text-dark" href="#">Entreprise</a>
-        <a class="nav-link text-dark" href="#">Accueil</a>
-        <a class="nav-link disabled" href="#">Informations</a>
-        <a class="nav-link disabled" href="#">Contact</a>
-    </nav>
+
+
+    <hr>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <!--Navbar-expand-lg étand sur toute la page-->
+
+
+                    <a href="#" class="navbar-brand">Entreprise</a>
+
+                    <!--L'attribut data- * est utilisé pour stocker des données personnalisées privées sur la page ou l'application.
+                    L'attribut data- * nous permet d'incorporer des attributs de données personnalisés sur tous les éléments HTML.
+                    Les données stockées (personnalisées) peuvent ensuite être utilisées dans le JavaScript de la page pour créer une expérience utilisateur plus attrayante (sans appels Ajax ni requêtes de base de données côté serveur).
+                    L'attribut data- * se compose de deux parties:
+                    Le nom de l'attribut ne doit pas contenir de lettres majuscules et doit être au moins un caractère bien après le préfixe "data-"
+                    La valeur d'attribut peut être n'importe quelle chaîne-->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"><!--(ARIA) (qu'on pourrait traduire par « applications internet riches et accessibles ») sont un ensemble un attribut qui définit comment rendre le contenu et les applications web accessibles.-->
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+
+                        <ul class="navbar-nav">
+                            <li class="navbar-item active">
+                                <a href="#" class="nav-link">Accueil <span class="sr-only">current</span></a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#" class="nav-link">Informations</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--JQuery first, then popper.js, then Bootstrap JS-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 
